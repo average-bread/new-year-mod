@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "nym",
+  "version": "${version}",
+
+  "name": "Example Mod",
+  "description": "This mod aims to help new BTA modders.",
+  "authors": [
+    "Turnip Labs"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cursedbread.nym.NYMMain"
+    ],
+		"beforeGameStart": [
+          "cursedbread.nym.NYMMain"
+		],
+		"afterGameStart": [
+          "cursedbread.nym.NYMMain"
+		],
+		"recipesReady": [
+          "cursedbread.nym.NYMCrafts"
+		]
+	},
+	"accessWidener": "nym.accesswidener",
+  "mixins": [
+      "nym.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "*",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
