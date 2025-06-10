@@ -3,10 +3,10 @@
   "id": "nym",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "New Year Mod",
+  "description": "Something easy in the spirit of holidays.",
   "authors": [
-    "Turnip Labs"
+    "Bread"
   ],
   "contact": {
     "homepage": "",
@@ -29,6 +29,9 @@
 		],
 		"recipesReady": [
           "cursedbread.nym.NYMCrafts"
+		],
+		"initModels": [
+          "cursedbread.nym.NYMModels"
 		]
 	},
 	"accessWidener": "nym.accesswidener",

@@ -1,8 +1,6 @@
 package cursedbread.nym;
 
-import net.minecraft.core.block.Block;
 import net.minecraft.core.block.Blocks;
-import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
 import turniplabs.halplibe.helper.RecipeBuilder;
@@ -22,6 +20,12 @@ public class NYMCrafts implements RecipeEntrypoint {
 			.addInput('D', Blocks.SAPLING_PINE)
 			.addInput('G', Items.AMMO_SNOWBALL)
 			.create("snowypinesapling", new ItemStack(NYMBlocks.snowyPineSapling));
+		RecipeBuilder.Shaped(NYMMain.MOD_ID)
+			.setShape("GGG", "FDF", "GGG")
+			.addInput('D', Blocks.TORCH_REDSTONE_ACTIVE)
+			.addInput('F', Items.STRING)
+			.addInput('G', Blocks.LAMP_IDLE)
+			.create("garland", new ItemStack(NYMBlocks.garlandOne));
 	}
 }
 
